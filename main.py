@@ -2,10 +2,19 @@ import sys
 import parse_schedule
 from tabulate import tabulate
 import json
+from subprocess import Popen, PIPE
 
 
 def getSettings():
-    with open('settings.json', 'r') as file:
+    # cmd = ['pwd']
+    # with Popen(cmd, stdout=PIPE) as proc:
+    #     print(proc.stdout.read().decode('utf-8'))
+    #
+    # cmd = ['ls']
+    # with Popen(cmd, stdout=PIPE) as proc:
+    #     print(proc.stdout.read().decode('utf-8'))
+
+    with open('/usr/local/bin/settings.json', 'r') as file:
         return json.loads(file.read())
 
 
