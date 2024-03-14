@@ -35,6 +35,8 @@ def get_schedule(settings):
             for td in tr.find_all('td'):
                 cell: str = td.text
                 cell = cell.replace('\n', '')
+                cell = cell.replace('-', ' - ')
+                cell = cell.replace('  ', ' ')
 
                 cell = optimize_length(cell, settings["word_length_slice"])
 
