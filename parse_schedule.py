@@ -60,11 +60,3 @@ def format_schedule_sheet(schedule_sheet):
     result += str_caps[0]
 
     return result
-
-
-if __name__ == '__main__':
-    schedule_sheets = get_schedule()
-    for ss in schedule_sheets:
-        print(tabulate(ss, tablefmt="double_grid"))
-    # [print(ss) for ss in schedule_sheets]
-
