@@ -38,8 +38,9 @@ styles = '''
 
 default_settings = """{
   "link": "https://kuzstu.ru/web-content/sitecontent/studentu/raspisanie/ПИб-232.html",
-  "white_space_treshhold": 15,
-  "style": "double_grid"
+  "style": "double_grid",
+  "maxcolwidth": 12,
+  "word_length_slice": 10
 }"""
 
 no_schedule = 'Нет расписания для этой недели'

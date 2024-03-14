@@ -50,7 +50,7 @@ if args[1] == '-w':
         print(no_schedule)
         sys.exit()
 
-    print(tabulate(schedule[week_num - 1], tablefmt=settings['style']))
+    print(tabulate(schedule[week_num - 1], tablefmt=settings['style'], maxcolwidths=settings['maxcolwidth']))
     sys.exit()
 
 if args[1] in ['--help', '-h']:
